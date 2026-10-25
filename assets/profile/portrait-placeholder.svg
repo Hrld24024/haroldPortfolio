@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 580" role="img" aria-labelledby="title desc">
+<title id="title">Formal portrait placeholder</title><desc id="desc">Stylized placeholder with silhouette and words ADD YOUR PHOTO.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#162c38"/><stop offset=".53" stop-color="#1b2839"/><stop offset="1" stop-color="#0e1623"/></linearGradient>
+<radialGradient id="glow" cx=".48" cy=".38" r=".65"><stop stop-color="#3bbcae" stop-opacity=".23"/><stop offset="1" stop-color="#3bbcae" stop-opacity="0"/></radialGradient>
+<linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3c4e61"/><stop offset="1" stop-color="#213343"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#668996" stroke-opacity=".14" stroke-width="1"/></pattern>
+</defs>
+<rect width="480" height="580" fill="url(#bg)"/><rect width="480" height="580" fill="url(#glow)"/><rect width="480" height="580" fill="url(#grid)"/>
+<path d="M-10 460L160 290M360 80l130 130" fill="none" stroke="#55e7d5" stroke-opacity=".09" stroke-width="2"/>
+<circle cx="240" cy="222" r="130" fill="#55e7d5" fill-opacity=".04" stroke="#55e7d5" stroke-opacity=".13"/>
+<path d="M94 516Q92 412 180 390L198 384 205 356H275L282 384 301 390Q388 412 386 516Z" fill="url(#shirt)" stroke="#668697" stroke-width="2"/>
+<path d="M206 360L240 402 273 360 282 392 240 465 198 392Z" fill="#d8e2e9" fill-opacity=".75"/>
+<path d="M223 413L240 402 256 413 247 500H233Z" fill="#55e7d5" fill-opacity=".65"/>
+<ellipse cx="240" cy="253" rx="83" ry="106" fill="#7896a6" fill-opacity=".62"/>
+<path d="M155 255Q148 162 214 144 255 130 289 153 331 173 324 255L310 222Q307 193 281 182 231 211 173 210Z" fill="#172633"/>
+<path d="M176 315Q240 376 304 315" fill="none" stroke="#a4d1d3" stroke-opacity=".3" stroke-width="2"/>
+<rect x="114" y="486" width="252" height="38" rx="5" fill="#07141e" fill-opacity=".83" stroke="#55e7d5" stroke-opacity=".35"/>
+<text x="240" y="510" fill="#bcf2ec" font-size="14" font-family="Arial,sans-serif" font-weight="700" letter-spacing="3" text-anchor="middle">ADD YOUR PHOTO</text>
+<path d="M30 60V30H60M420 30h30v30M30 520v30h30M420 550h30v-30" stroke="#55e7d5" stroke-opacity=".42" fill="none" stroke-width="2"/>
+</svg>
