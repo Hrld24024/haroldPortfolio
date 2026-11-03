@@ -7,18 +7,26 @@ const SITE_CONFIG = { githubProfile: "" };
 
 const projects = {
   "stafit": {
-    title: "STAFit — IoT-Based Balance Exercise Platform",
+    title: "IoT-based Balance and Tremor Exercise Board for Parkinson's with Blood Pressure Monitoring and Android Application",
     summary: "An undergraduate thesis concept for a home-use balance exercise system intended for people living with Parkinson's disease.",
     context: "A completed undergraduate thesis project that developed a home-use balance platform featuring real-time sensor-based movement feedback, supported handrails, and a companion Android application for tracking exercise progress. The study has been fully completed, successfully defended, hardbound, and published.",
     role: "Served as a core member of the student research and development team. Contributed to concept development, IoT hardware implementation, sensor integration, and complete thesis documentation from initial research to final publication.",
+    challenge: "Translate rehabilitation-oriented requirements into a working sensor-based prototype while coordinating the hardware, feedback system, Android tracking, and thesis documentation.",
+    result: "Completed, defended, hardbound, and published the undergraduate thesis with a working prototype concept and companion Android application.",
     tools: ["IoT", "Raspberry Pi", "Sensors", "Balance feedback", "Android application", "Prototype design"],
-    caveat: "STATUS: COMPLETED & PUBLISHED · Hardbound and finalized thesis project. Not a clinically validated medical device."
+    caveat: "STATUS: COMPLETED & PUBLISHED · Hardbound and finalized thesis project. Not a clinically validated medical device.",
+    videoUrl: "assets/stafit/stafitvideo.mp4",
+    resources: [
+      {label: "Read the IEEE publication", href: "assets/stafit/obscura_ieee.pdf", kind: "PDF"}
+    ]
   },
   "thesis-library": {
     title: "Thesis Library System",
     summary: "A web-based project designed to support organized access to Computer Engineering thesis materials.",
     context: "The project aims to make academic thesis information easier to organize and locate through an online interface for student research resources.",
     role: "Contributed to website development and technical documentation. Add screenshots, a repository link, and the exact technologies once available.",
+    challenge: "Organize academic thesis resources into a clearer online experience that is easier for students to browse and locate.",
+    result: "Completed an academic web project focused on improving access to organized Computer Engineering thesis materials.",
     tools: ["Website development", "Information organization", "Technical documentation"],
     caveat: "This is completed academic work, but it is not a public-facing service or a commercial product."
   },
@@ -26,7 +34,9 @@ const projects = {
     title: "Sumobot",
     summary: "A sensor-based robot developed as an academic competition project.",
     context: "The project combines electronic components, sensors, and microcontroller logic to create a compact robot for a class sumobot competition.",
-    role: "Supported project documentation and team coordination. The robot earned first place in the class competition (confirm the competition label and date for the public website).",
+    role: "Supported project documentation and team coordination. The robot earned first place in the class competition.",
+    challenge: "Tune sensor-based movement, robot behavior, and team coordination within the limits of a class competition build.",
+    result: "Completed the class competition robot and earned first place in the class competition.",
     tools: ["Robotics", "Microcontroller systems", "Sensors", "Team collaboration"],
     caveat: "ACHIEVEMENT: First place in a class-level competition, not a claim of a national or university-wide award."
   },
@@ -35,24 +45,77 @@ const projects = {
     summary: "A component-based learning setup for understanding electronics and microcontroller interaction.",
     context: "The kit brings together an Arduino Uno and electronics learning components such as sensors, input interfaces, a display, and motor-control elements for hands-on exercises.",
     role: "Worked on selecting and exploring components and developing Arduino-based learning activities. Replace this with your precise contributions and photos.",
+    challenge: "Connect different electronics components into a practical learning setup that supports repeatable hands-on experiments.",
+    result: "Built a component-based Arduino learning kit for exploring sensors, interfaces, displays, and motor-control activities.",
     tools: ["Arduino Uno", "Ultrasonic sensors", "IR sensors", "RFID", "Keypad", "LCD", "Motor driver"],
     caveat: "This is a learning kit concept for educational purposes, not a commercial product or a finished application."
+  },
+  "computer-architecture": {
+    title: "Computer Architecture and Organization",
+    summary: "Academic work exploring how computer components are structured and operate together as a complete system.",
+    context: "This coursework focused on the relationship between processor components, memory, data movement, and the organization of a computer system.",
+    role: "Completed academic work for the Computer Architecture and Organization course. Add the specific activities, diagrams, simulations, or implementation details when you are ready to document them.",
+    challenge: "Explain low-level computer components and data movement as one connected system rather than as isolated topics.",
+    result: "Completed coursework exploring processor structure, memory organization, and system-level computer architecture.",
+    tools: ["CPU systems", "Memory organization", "Computer architecture", "Systems thinking"],
+    caveat: "This entry describes coursework-level work; update it with the exact project output and your individual contribution before publishing.",
+    // Add the public video URL and resource links here when those files are available.
+    videoUrl: "",
+    resources: []
+  },
+  "academand": {
+    title: "AcaDemand",
+    summary: "A Technopreneurship project developed as a business and innovation proposal.",
+    context: "AcaDemand is documented in the team’s Technopreneurship project proposal, bringing together the project idea, value proposition, business direction, and supporting innovation work.",
+    role: "Contributed to the collaborative Technopreneurship project and its proposal documentation. The complete project document is available below.",
+    challenge: "Turn an initial idea into a structured proposal with a clear value proposition, business direction, and supporting innovation work.",
+    result: "Produced a collaborative Technopreneurship proposal documenting the AcaDemand concept and its intended impact.",
+    tools: ["Technopreneurship", "Innovation planning", "Business proposal", "Team collaboration"],
+    caveat: "Project details and claims should be read together with the supplied proposal document.",
+    videoUrl: "assets/Academand/ForSubmission.mp4",
+    resources: [
+      {label: "View AcaDemand project document (PDF)", href: "assets/Academand/AcaDemand-Innoventyurmerged.pdf", kind: "PDF"}
+    ]
+  },
+  "data-digital-communications": {
+    title: "Data and Digital Communications",
+    summary: "A Python human-to-human chatroom application built with Tkinter for the interface and sockets for client-server communication.",
+    context: "The project demonstrates real-time digital communication between users through a desktop chatroom. It combines a user-friendly interface, emoji support, typing indicators, message timestamps, and threaded message handling for a smoother chat experience.",
+    role: "Contributed to message formatting and presentation, including chat bubbles, alignment, timestamps, and handling messages from multiple users.",
+    challenge: "Coordinate client-server messaging, interface updates, and threaded communication while keeping the chat experience clear for multiple users.",
+    result: "Completed a collaborative Python chatroom prototype with a Tkinter interface, socket communication, and real-time messaging features.",
+    tools: ["Python", "Tkinter", "Sockets", "Client-server communication", "Threading", "Real-time messaging"],
+    caveat: "ACADEMIC PROJECT · Built for the Data and Digital Communications course as a collaborative team application.",
+    resources: [
+      {label: "View project presentation (PDF)", href: "assets/Data and Digital Communications/Group_7_CpeC303_PT6-1.pdf", kind: "PDF"},
+      {label: "View project documentation (PDF)", href: "assets/Data and Digital Communications/GRP7_PROJ%233_CPEC303_301G.pdf", kind: "PDF"}
+    ]
   },
   "obstacle-robot": {
     title: "Obstacle-Avoiding Robot",
     summary: "An embedded systems academic project from 2025 focused on obstacle detection.",
     context: "A mobile robot concept that uses distance sensing and microcontroller instructions to detect nearby objects and adjust movement.",
     role: "Team academic project. Your older resume lists this project but does not specify your individual contribution; add that before publishing.",
+    challenge: "Detect nearby obstacles reliably and translate sensor readings into appropriate movement decisions for the robot.",
+    result: "Developed an academic obstacle-avoidance robot concept focused on distance sensing and microcontroller-based movement control.",
     tools: ["Embedded systems", "Robotics", "Obstacle detection", "Sensors"],
     caveat: "YEAR: 2025 · Hardware and algorithm details should match your actual project build."
   },
   "breedify": {
     title: "Breedify",
-    summary: "A dog breed identification project using a Siamese AI model approach.",
-    context: "An academic software concept exploring visual feature comparison and how image similarity models may support breed identification.",
-    role: "Collaborative academic project. Add the exact implementation, dataset, responsibilities, and evaluation results when confirmed.",
-    tools: ["AI project", "Siamese model concept", "Image comparison", "Software development"],
-    caveat: "Avoid publishing performance statistics or calling it a finished application until those details are verified."
+    summary: "A web-based project that analyzes an uploaded image to help identify the likely dog breed.",
+    context: "Breedify explores image-based dog-breed analysis through a web interface and a Siamese-model approach for comparing visual features between an uploaded dog image and reference data.",
+    role: "Collaborative academic project. Contributed to the project documentation, web-based presentation, and exploration of image-comparison concepts for dog-breed analysis.",
+    challenge: "Explore how image similarity can support dog-breed analysis while keeping the project understandable as an academic prototype.",
+    result: "Completed an academic web prototype and supporting documentation for image comparison and dog-breed analysis concepts.",
+    tools: ["Web development", "Siamese model concept", "Image comparison", "Dog-breed analysis"],
+    caveat: "The project is an academic prototype and should not be presented as a guaranteed or veterinary-grade breed identification service.",
+    // Paste the public YouTube, Google Drive, or other hosted demo URL here.
+    videoUrl: "https://drive.google.com/file/d/1nPElB-hgF9l0OtsFn88EQu_uwdwkQc03/view?usp=drive_link",
+    resources: [
+      {label: "View project documentation (PDF)", href: "assets/breedify/CPE C314- P3. Project Documentation - SplashIsland.pdf", kind: "PDF"},
+      {label: "View source notebook", href: "assets/breedify/AI_project.ipynb", kind: "CODE"}
+    ]
   }
 };
 
@@ -109,6 +172,8 @@ projectCards.forEach(card => {
     document.getElementById('dialog-summary').textContent = data.summary;
     document.getElementById('dialog-context').textContent = data.context;
     document.getElementById('dialog-role').textContent = data.role;
+    document.getElementById('dialog-challenge').textContent = data.challenge;
+    document.getElementById('dialog-result').textContent = data.result;
     document.getElementById('dialog-caveat').textContent = data.caveat;
     const techContainer = document.getElementById('dialog-tools');
     techContainer.replaceChildren();
@@ -117,6 +182,27 @@ projectCards.forEach(card => {
       tag.textContent = tool;
       techContainer.append(tag);
     });
+    const resourcesPanel = document.getElementById('dialog-resources');
+    const resourceLinks = document.getElementById('dialog-resource-links');
+    resourceLinks.replaceChildren();
+    const resources = [...(data.resources || [])];
+    if (data.videoUrl?.trim()) {
+      resources.push({label: 'Watch video demonstration', href: data.videoUrl.trim(), kind: 'VIDEO'});
+    }
+    if (resources.length) {
+      resources.forEach(resource => {
+        const link = document.createElement('a');
+        link.className = 'dialog-resource-link';
+        link.href = resource.href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.innerHTML = `<span>${resource.kind}</span>${resource.label} <b aria-hidden="true">↗</b>`;
+        resourceLinks.append(link);
+      });
+      resourcesPanel.hidden = false;
+    } else {
+      resourcesPanel.hidden = true;
+    }
     dialog.showModal();
     dialog.querySelector('.dialog-inner').scrollTop = 0;
     openProjectGallery(card.dataset.project);
@@ -194,6 +280,52 @@ document.querySelectorAll('.org-card').forEach(card => {
   });
 });
 
+// Keep dated credentials in newest-to-oldest order while leaving undated certificates grouped separately.
+document.querySelectorAll('.credential-grid').forEach(grid => {
+  [...grid.querySelectorAll('.credential-card[data-date-sort]')]
+    .sort((a, b) => b.dataset.dateSort.localeCompare(a.dataset.dateSort))
+    .forEach(card => grid.append(card));
+});
+
+// Allow the credentials section to collapse like organization positions.
+const credentialsToggle = document.querySelector('.credentials-toggle');
+const credentialsList = document.getElementById('credentials-list');
+if (credentialsToggle && credentialsList) {
+  credentialsToggle.addEventListener('click', () => {
+    const expanded = credentialsToggle.getAttribute('aria-expanded') === 'true';
+    credentialsToggle.setAttribute('aria-expanded', String(!expanded));
+    credentialsList.hidden = expanded;
+    credentialsToggle.innerHTML = expanded
+      ? 'View badges <span class="toggle-symbol" aria-hidden="true">+</span>'
+      : 'Hide badges <span class="toggle-symbol" aria-hidden="true">−</span>';
+  });
+}
+
+// Open certification images in a full-size, keyboard-accessible viewer.
+const credentialLightbox = document.getElementById('credential-lightbox');
+const credentialLightboxImage = document.getElementById('credential-lightbox-image');
+const credentialLightboxCaption = document.getElementById('credential-lightbox-caption');
+const credentialLightboxClose = document.getElementById('credential-lightbox-close');
+const credentialImageButtons = document.querySelectorAll('.credential-image-button');
+credentialImageButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const image = button.querySelector('img');
+    if (!image) return;
+    credentialLightboxImage.src = image.src;
+    credentialLightboxImage.alt = image.alt;
+    credentialLightboxCaption.textContent = image.alt;
+    credentialLightbox.showModal();
+    credentialLightboxClose.focus();
+  });
+});
+function closeCredentialLightbox() {
+  if (credentialLightbox?.open) credentialLightbox.close();
+}
+credentialLightboxClose?.addEventListener('click', closeCredentialLightbox);
+credentialLightbox?.addEventListener('click', event => {
+  if (event.target === credentialLightbox) closeCredentialLightbox();
+});
+
 // Copy the displayed email rather than requiring visitors to use a mail app.
 const copyEmailButton = document.getElementById('copy-email');
 if (copyEmailButton) {
@@ -253,14 +385,52 @@ const PHOTO_FOLDER = {
   'sumobot': 'sumobot',
   'arduino-kit': 'arduino-kit',
   'obstacle-robot': 'obstacle-robot',
-  'breedify': 'breedify'
+  'breedify': 'breedify',
+  'computer-architecture': 'Computer Architecture'
 };
 
 // Optional: customize the order, filenames, and captions for individual projects.
 // Example after uploading a PNG:
 // 'sumobot': [{src:'assets/projects/sumobot/robot-front.png', caption:'Front view of our robot'}]
 const PHOTO_OVERRIDES = {
-  // Add a project ID here only if you want to use custom image filenames.
+  'academand': [
+    {src: 'assets/Academand/academand1.png', caption: 'AcaDemand — project presentation'}
+  ],
+  'stafit': [
+    {src: 'assets/stafit/stafit1.png', caption: 'STAFit — balance platform prototype'},
+    {src: 'assets/stafit/stafit2.png', caption: 'STAFit — prototype detail and sensor setup'},
+    {src: 'assets/stafit/stafit3.png', caption: 'STAFit — connected hardware and feedback components'},
+    {src: 'assets/stafit/stafit4.png', caption: 'STAFit — completed prototype presentation'}
+  ],
+  'sumobot': [
+    {src: 'assets/sumobot/eltorolook1.jpg', caption: 'El Toro Sumobot — side view and front wedge'},
+    {src: 'assets/sumobot/eltorolook2.jpg', caption: 'El Toro Sumobot — front three-quarter view'},
+    {src: 'assets/sumobot/eltorolook3.jpg', caption: 'El Toro Sumobot — rear electronics and wiring'},
+    {src: 'assets/sumobot/eltorolook4.jpg', caption: 'El Toro Sumobot — top view of the assembled robot'},
+    {src: 'assets/sumobot/eltorolook5.jpg', caption: 'El Toro Sumobot — competition-ready build'},
+    {src: 'assets/sumobot/eltorolook6.jpg', caption: 'El Toro Sumobot — detail view of the drive system'}
+  ],
+  'arduino-kit': [
+    {src: 'assets/arduino-kit/Arduinokitproh.jpg', caption: 'Arduino Learning Kit — project setup'},
+    {src: 'assets/arduino-kit/Arduinokitproj.jpg', caption: 'Arduino Learning Kit — component project'}
+  ],
+  'breedify': [
+    {src: 'assets/breedify/Breederifyweb.png', caption: 'Breedify web-based dog-breed analysis interface'}
+  ],
+  'computer-architecture': [
+    {src: 'assets/assets/projects/Computer Architecture/Arch.jpg', caption: 'Computer Architecture and Organization — architecture work'},
+    {src: 'assets/assets/projects/Computer Architecture/Architec.jpg', caption: 'Computer Architecture and Organization — project work'},
+    {src: 'assets/assets/projects/Computer Architecture/Architecturepro.jpg', caption: 'Computer Architecture and Organization — project output'}
+  ],
+  'computer-architecture': [
+    {src: 'assets/Computer Architecture/Arch.jpg', caption: 'Computer Architecture and Organization — architecture work'},
+    {src: 'assets/Computer Architecture/Architec.jpg', caption: 'Computer Architecture and Organization — project work'},
+    {src: 'assets/Computer Architecture/Architecturepro.jpg', caption: 'Computer Architecture and Organization — project output'}
+  ],
+  'data-digital-communications': [
+    {src: 'assets/Data and Digital Communications/ddc1.png', caption: 'Data and Digital Communications — project presentation'},
+    {src: 'assets/Data and Digital Communications/ddc2.png', caption: 'Data and Digital Communications — Rizalian Chatroom interface'}
+  ]
 };
 
 const gallery = {
@@ -335,6 +505,14 @@ function resetGallery() {
   gallery.next.hidden = true;
 }
 
+function toggleProjectSchematic(projectId) {
+  const schematic = document.getElementById('project-schematic');
+  const fullLink = document.getElementById('schematic-full');
+  const isSumobot = projectId === 'sumobot';
+  schematic.hidden = !isSumobot;
+  if (isSumobot) fullLink.href = 'assets/sumobot/eltoroSchematic.jpg';
+}
+
 function populateGallery(photos) {
   currentProjectPhotos = photos;
   gallery.placeholder.hidden = photos.length > 0;
@@ -368,6 +546,7 @@ function populateGallery(photos) {
 async function openProjectGallery(projectId) {
   const ticket = ++photoRequest;
   resetGallery();
+  toggleProjectSchematic(projectId);
   if (projectPhotoCache.has(projectId)) {
     populateGallery(projectPhotoCache.get(projectId));
     return;
