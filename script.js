@@ -14,7 +14,8 @@ const projects = {
     result: "Completed, defended, hardbound, and published the undergraduate thesis with a working prototype concept and companion Android application.",
     tools: ["IoT", "Raspberry Pi", "Sensors", "Balance feedback", "Android application", "Prototype design"],
     caveat: "STATUS: COMPLETED & PUBLISHED · Hardbound and finalized thesis project. Not a clinically validated medical device.",
-    videoUrl: "assets/stafit/stafitvideo.mp4",
+    videoUrl: "assets/Academand/ForSubmission.mp4",
+
     resources: [
       {label: "Read the IEEE publication", href: "assets/stafit/obscura_ieee.pdf", kind: "PDF"}
     ]
