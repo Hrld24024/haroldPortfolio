@@ -706,3 +706,43 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--font-display);font-size:clamp
         border: 1px solid #263141;
     }
 }
+
+/* PROJECT CARD LAYOUT FIX - NOV 2026 */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .project-open {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: auto;
+}
+
+.project-card .project-art {
+  flex-shrink: 0;
+}
+
+.project-card .project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: auto;
+  min-height: 0;
+}
+
+.project-card .project-tags {
+  margin-bottom: 24px;
+}
+
+.project-card .card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 17px;
+  border-top: 1px solid #303c4b;
+}
