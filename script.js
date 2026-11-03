@@ -71,7 +71,7 @@ const projects = {
     result: "Produced a collaborative Technopreneurship proposal documenting the AcaDemand concept and its intended impact.",
     tools: ["Technopreneurship", "Innovation planning", "Business proposal", "Team collaboration"],
     caveat: "Project details and claims should be read together with the supplied proposal document.",
-    videoUrl: "assets/Academand/ForSubmission.mp4",
+    videoUrl: ""assets/Academand/ForSubmission.mp4"",
     resources: [
       {label: "View AcaDemand project document (PDF)", href: "assets/Academand/AcaDemand-Innoventyurmerged.pdf", kind: "PDF"}
     ]
