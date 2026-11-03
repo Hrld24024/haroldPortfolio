@@ -4,7 +4,6 @@
   Leave it empty to hide the GitHub button instead of showing a broken link.
 */
 const SITE_CONFIG = { githubProfile: "" };
-
 const projects = {
   "stafit": {
     title: "IoT-based Balance and Tremor Exercise Board for Parkinson's with Blood Pressure Monitoring and Android Application",
@@ -467,7 +466,7 @@ function imagesForProject(projectId) {
   const folder = PHOTO_FOLDER[projectId];
   if (!folder) return [];
   return [1, 2, 3, 4].map(n => ({
-    src: `assets/projects/${folder}/${String(n).padStart(2, '0')}.jpg`,
+    src: `assets/${folder}/${String(n).padStart(2, '0')}.jpg`,
     caption: `${projects[projectId]?.title || 'Project'} — photo ${String(n).padStart(2, '0')}`
   }));
 }
