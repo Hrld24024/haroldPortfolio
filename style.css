@@ -706,3 +706,78 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--font-display);font-size:clamp
         border: 1px solid #263141;
     }
 }
+
+/* ===== PROJECT CARD FOOTER FIX ===== */
+
+.projects-grid {
+  grid-auto-rows: auto;
+  align-items: stretch;
+}
+
+.projects-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.projects-grid .project-card > .project-open {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: auto !important;
+  width: 100%;
+  padding: 0;
+}
+
+.projects-grid .project-art {
+  flex: 0 0 193px;
+}
+
+.projects-grid .project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: auto !important;
+  min-height: 300px;
+  padding: 24px 22px 22px;
+}
+
+.projects-grid .project-tags {
+  margin-bottom: 24px;
+}
+
+/* Divider and case-study link */
+
+.projects-grid .card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: auto !important;
+  padding-top: 17px;
+  border-top: 1px solid #405064;
+
+  color: #e4edf6;
+  font-size: 12px;
+  font-weight: 700;
+  visibility: visible;
+}
+
+.projects-grid .card-action span {
+  color: #55e7d5;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+  .projects-grid .project-card {
+    min-height: 0;
+  }
+
+  .projects-grid .project-content {
+    min-height: 300px;
+  }
+}
