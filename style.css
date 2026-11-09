@@ -781,3 +781,171 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--font-display);font-size:clamp
     min-height: 300px;
   }
 }
+
+
+/* CERTIFICATION CATEGORY HEADINGS */
+
+.credential-group-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 40px 0 20px;
+
+    color: #55e7d5;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Divider after each heading */
+
+.credential-group-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #355e61,
+        transparent
+    );
+}
+
+/* Extra spacing before passed certifications */
+
+#passed-certifications {
+    margin-bottom: 35px;
+}
+
+/* Responsive category headings */
+
+@media (max-width: 600px) {
+    .credential-group-title {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+    }
+}
+
+
+/* ===== CERTIFICATION CATEGORY SEPARATION ===== */
+
+.credential-group-title--passed {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+
+    margin: 52px 0 22px;
+    color: #55e7d5;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.credential-group-title--passed::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        rgba(85,231,213,0.4),
+        transparent
+    );
+}
+
+/* Separate grids, three columns */
+.credential-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+#passed-certifications {
+    margin-bottom: 48px;
+}
+
+#passed-certifications .credential-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+}
+
+#passed-certifications .credential-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Align dates and buttons */
+#passed-certifications .passed-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #293b4b;
+}
+
+#passed-certifications .passed-footer .credential-date {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    color: #55e7d5;
+    font: 700 10px/1.6 var(--font-mono);
+}
+
+#passed-certifications .passed-footer .credential-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 9px 13px;
+    border: 1px solid #3a6260;
+    border-radius: 5px;
+
+    background: rgba(85,231,213,0.07);
+    color: #d6fff8;
+    font: 700 10px/1.4 var(--font-mono);
+    text-decoration: none;
+
+    transition: background .25s, transform .25s;
+}
+
+#passed-certifications .credential-view:hover {
+    background: rgba(85,231,213,0.17);
+    transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .credential-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .credential-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credential-group-title--passed {
+        margin-top: 38px;
+        font-size: 10px;
+    }
+}
+
+
