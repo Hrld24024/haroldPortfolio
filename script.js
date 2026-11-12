@@ -58,7 +58,7 @@ const projects = {
     challenge: "Explain low-level computer components and data movement as one connected system rather than as isolated topics.",
     result: "Completed coursework exploring processor structure, memory organization, and system-level computer architecture.",
     tools: ["CPU systems", "Memory organization", "Computer architecture", "Systems thinking"],
-    caveat: "This entry describes coursework-level work; update it with the exact project output and your individual contribution before publishing.",
+    caveat: "This project already done and submitted for academic purposes.",
     // Add the public video URL and resource links here when those files are available.
     videoUrl: "",
     resources: []
